@@ -1,4 +1,4 @@
-sentry.trenttech.co.uk {
+sentry.trenttech.co.uk:8443 {
 
 	@api {
 		path_regexp ^/api/[1-9]\d*/
