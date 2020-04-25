@@ -1,7 +1,9 @@
-sentry.trenttech.co.uk {
-	
+{
 	http_port 8080
 	https_port 8443
+}
+
+sentry.trenttech.co.uk {
 
 	@api {
 		path_regexp ^/api/[1-9]\d*/
