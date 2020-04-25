@@ -1,0 +1,14 @@
+sentry.trenttech.co.uk {
+
+	@api {
+		path_regexp ^/api/[1-9]\d*/
+	}
+
+	reverse_proxy /api/store/ http://relay
+
+	reverse_proxy @api http://relay:3000
+
+	reverse_proxy / http://web:9000
+
+	tls jon@trenttech.co.uk
+}
